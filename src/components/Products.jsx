@@ -19,11 +19,11 @@ export const Products = () => {
     const navigate =useNavigate()
 
     if (isLoading) {
-        return
+        return;
         <div>loading</div>
     }
     if (isError) {
-        return
+        return;
         <div>Error by fetching data</div>
     }
     status =='success' && console.log(data.products) 

@@ -8,11 +8,11 @@ const imagesUrl = 'https://jsonplaceholder.typicode.com/albums/1/photos'
 export const Images = () => {
     const { data, status, isLoading, isError } = useQuery(['images', imagesUrl], getData)
     if (isLoading) {
-        return
+        return;
         <div>loading</div>
     }
     if (isError) {
-        return
+        return;
         <div>Error by fetching images</div>
     }
     
